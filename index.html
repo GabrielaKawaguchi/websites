@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conexão Total</title>
+    <link rel="stylesheet" href="css/estiloinicio.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <h1>Conexão Total</h1>
+        <div id="barra-pesquisa">
+            <div id="barra">
+                <label for="pesquisa" id="textoBarra">Pesquise as páginas do site:</label>
+                <input type="text" placeholder="Digite uma palavra-chave:" id="pesquisa" onkeydown="verificarEnter(event)">
+            </div>
+        </div>
+    </header>
+    <main>
+        <header>
+            <label id="l-toogle" for="toogle">
+                <i class="material-symbols-outlined">Menu</i>
+            </label>
+            <input type="checkbox" id="toogle">
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="pages/quemsomos.html">Quem somos</a></li>
+                    <li><a href="pages/planos.html">Planos</a></li>
+                    <li><a href="pages/vantagens.html">Vantagens</a></li>
+                    <li><a href="pages/servicos.html">Serviços</a></li>
+                    <li><a href="pages/contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h2>Início</h2>
+            <div id="quemsomos">
+                <h3>Quem somos</h3>
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <h4>Nossa História</h4>
+                        <p>Bem-vindo à Conexão Total, o seu provedor de internet de confiança em Indaiatuba! Desde nossa fundação,
+                            buscamos transformar a vida digital de nossa comunidade, fornecendo serviços de internet inovadores e de
+                            alta qualidade.</p>
+                        <a href="pages/quemsomos.html#historia">Clique aqui para saber mais</a>
+                    </div>
+            
+                    <div class="mySlides fade">
+                        <h4>Nossa Equipe</h4>
+                        <p>Nossa equipe é composta por profissionais apaixonados por tecnologia e comprometidos em oferecer a melhor
+                            experiência aos nossos clientes. Trabalhamos juntos para manter a Conexão Total como líder em serviços
+                            de
+                            internet, sempre prontos para superar desafios e abraçar a evolução tecnológica.</p>
+                        <a href="pages/quemsomos.html#equipe">Clique aqui para saber mais</a>
+                        
+                    </div>
+            
+                    <div class="mySlides fade">
+                        <h4>Nossos Valores</h4>
+                        <p>Na Conexão Total, temos valores fundamentais que orientam nosso trabalho diário: </p>
+                        <p>Inovação, qualidade, comunidade e transparência.</p>
+                        <a href="pages/quemsomos.html#valores">Clique aqui para saber mais</a>
+                        
+                    </div>
+            
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+            
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+            <div>
+                <h3>Planos</h3>
+            </div>
+            <div class="planos-container">
+                <div class="plano">
+                    <h3>Plano Básico</h3>
+                        <p>Velocidade: 50 Mbps</p>
+                        <p>Preço: R$ 59,99/mês</p>
+                        <p>Instalação gratuita</p>
+                    
+                    <button type="button"><a href="pages/planos.html">Clique para saber mais</a></button>
+                </div>
+    
+                <div class="plano">
+                    <h3>Plano Padrão</h3>
+                    
+                        <p>Velocidade: 100 Mbps</p>
+                        <p>Preço: R$ 79,99/mês</p>
+                        <p>Instalação gratuita</p>
+                    
+                    <button type="button"><a href="pages/planos.html">Clique para saber mais</a></button>
+                </div>
+    
+                <div class="plano">
+                    <h3>Plano Premium</h3>
+                    
+                        <p>Velocidade: 200 Mbps</p>
+                        <p>Preço: R$ 99,99/mês</p>
+                        <p>Instalação gratuita</p>
+                    
+                    <button type="button"><a href="pages/planos.html">Clique para saber mais</a></button>
+                </div>
+            </div>
+            <div>
+                <h3>Serviços</h3>
+                <div class="planos-container">
+                    <div class="plano">
+                        <h3>Conexão 50Mb</h3>
+                            <p>Velocidade: 50 Mbps</p>
+                            <p>Preço: R$ 69,99/mês</p>
+                            <p>Instalação gratuita</p>
+                            <p>Suporte básico</p>
+                            <p>Cabeamento Ethernet, RJ-45 Cat6</p>
+                        
+                        <button type="button"><a href="pages/servicos.html">Clique para saber mais</a></button>
+                    </div>
+                    <div class="plano">
+                        <h3>Conexão 200Mb</h3>
+                            <p>Velocidade: 200 Mbps</p>
+                            <p>Preço: R$ 89,99/mês</p>
+                            <p>Instalação gratuita</p>
+                            <p>Suporte avançado</p>
+                            <p>Conexão Fibra Ótica</p>
+                            <br>
+                        
+                        <button type="button"><a href="pages/servicos.html">Clique para saber mais</a></button>
+                    </div>
+                    <div class="plano">
+                        <h3>Conexão GigaEthernet</h3>
+                            <p>Velocidade: 1000 Mbps</p>
+                            <p>Preço: R$ 109,99/mês</p>
+                            <p>Instalação gratuita</p>
+                            <p>Suporte premium 24/7</p>
+                            <p>Consulte-nos em <a href="contato.html">Contato</a></p>
+                            <br>
+                        
+                        <button type="button"><a href="pages/servicos.html">Clique para saber mais</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+    </main>
+    <footer>
+        <p>&copy;2023 - Conexão Total</p>
+    </footer>
+    <script src="js/scriptinicio.js"></script>
+</body>
+</html>
