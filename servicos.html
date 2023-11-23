@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conexão Total - Serviços</title>
+    <link rel="stylesheet" href="../css/estiloservicos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <header>
+        <h1>Conexão Total</h1>
+        <div id="barra-pesquisa">
+            <div id="barra">
+                <label for="pesquisa" id="textoBarra">Pesquise as páginas do site:</label>
+                <input type="text" placeholder="Digite uma palavra-chave:" id="pesquisa" onkeydown="verificarEnter(event)">
+            </div>
+        </div>
+    </header>
+    <main>
+        <header>
+            <label id="l-toogle" for="toogle">
+                <i class="material-symbols-outlined">Menu</i>
+            </label>
+            <input type="checkbox" id="toogle">
+            <nav>
+                <ul id="menu">
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="quemsomos.html">Quem somos</a></li>
+                    <li><a href="planos.html">Planos</a></li>
+                    <li><a href="vantagens.html">Vantagens</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <section>
+        <h2>Serviços</h2>
+
+        <div class="planos-container">
+            <div class="plano">
+                <h3>Conexão 50Mb</h3>
+                <p>Velocidade: 50 Mbps</p>
+                <p>Preço: R$ 69,99/mês</p>
+                <p>Instalação gratuita</p>
+                <p>Suporte básico</p>
+                <p>Cabeamento Ethernet, RJ-45 Cat6</p>
+
+                <button onclick="location.href='compraservico.html'">Quero adquirir esse serviço</button>
+            </div>
+            <div class="plano">
+                <h3>Conexão 200Mb</h3>
+                <p>Velocidade: 200 Mbps</p>
+                <p>Preço: R$ 89,99/mês</p>
+                <p>Instalação gratuita</p>
+                <p>Suporte avançado</p>
+                <p>Conexão Fibra Ótica</p>
+                <br>
+
+                <button onclick="location.href='compraservico.html'">Quero adquirir esse serviço</button>
+            </div>
+            <div class="plano">
+                <h3>Conexão GigaEthernet</h3>
+                <p>Velocidade: 1000 Mbps</p>
+                <p>Preço: R$ 109,99/mês</p>
+                <p>Instalação gratuita</p>
+                <p>Suporte premium 24/7</p>
+                <p>Consulte-nos em <a href="contato.html">Contato</a></p>
+                <br>
+
+                <button onclick="location.href='compraservico.html'">Quero adquirir esse serviço</button>
+            </div>
+        </div>
+        <table>
+            <caption>
+                <input type="text" id="filtro" onkeyup="filtrarTabela()" placeholder="Filtrar por recursos">
+            </caption>
+            <thead>
+                <tr>
+                    <th>Recursos</th>
+                    <th>Conexão 50Mb</th>
+                    <th>Conexão 200Mb</th>
+                    <th>Conexão GigaEthernet</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="titulo">Velocidade</td>
+                    <td>50 Mbps</td>
+                    <td>200 Mbps</td>
+                    <td>1000 Mbps</td>
+                </tr>
+                <tr>
+                    <td class="titulo">Preço</td>
+                    <td>R$ 99,99/mês</td>
+                    <td>R$ 89,99/mês</td>
+                    <td>R$ 109,99/mês</td>
+                </tr>
+                <tr>
+                    <td class="titulo">Instalação</td>
+                    <td>Gratuita</td>
+                    <td>Gratuita</td>
+                    <td>Gratuita</td>
+                </tr>
+                <tr>
+                    <td class="titulo">Suporte</td>
+                    <td>Básico</td>
+                    <td>Avançado</td>
+                    <td>Premium</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <br>
+    <br>
+    <br>
+    </main>
+    <footer>
+        <p>&copy;2023 - Conexão Total</p>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
