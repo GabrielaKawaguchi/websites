@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conexão Total - Planos de Internet</title>
+    <link rel="stylesheet" href="../css/estiloplanos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <header>
+        <h1>Conexão Total</h1>
+        <div id="barra-pesquisa">
+            <div id="barra">
+                <label for="pesquisa" id="textoBarra">Pesquise as páginas do site:</label>
+                <input type="text" placeholder="Digite uma palavra-chave:" id="pesquisa" onkeydown="verificarEnter(event)">
+            </div>
+        </div>
+    </header>
+    <main>
+        <header>
+            <label id="l-toogle" for="toogle">
+                <i class="material-symbols-outlined">Menu</i>
+            </label>
+            <input type="checkbox" id="toogle">
+            <nav>
+                <ul id="menu">
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="quemsomos.html">Quem somos</a></li>
+                    <li><a href="planos.html">Planos</a></li>
+                    <li><a href="vantagens.html">Vantagens</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <section>
+        <h2>Planos de Internet</h2>
+
+        <div class="planos-container">
+            <div class="plano">
+                <h3>Plano Básico</h3>
+                <p>Velocidade: 50 Mbps</p>
+                <p>Preço: R$ 59,99/mês</p>
+                <p>Instalação gratuita</p>
+
+                <button onclick="location.href='compra.html'">Quero comprar esse plano</button>
+            </div>
+
+            <div class="plano">
+                <h3>Plano Padrão</h3>
+
+                <p>Velocidade: 100 Mbps</p>
+                <p>Preço: R$ 79,99/mês</p>
+                <p>Instalação gratuita</p>
+
+                <button onclick="location.href='compra.html'">Quero comprar esse plano</button>
+            </div>
+
+            <div class="plano">
+                <h3>Plano Premium</h3>
+
+                <p>Velocidade: 200 Mbps</p>
+                <p>Preço: R$ 99,99/mês</p>
+                <p>Instalação gratuita</p>
+
+                <button onclick="location.href='compra.html'">Quero comprar esse plano</button>
+            </div>
+        </div>
+        <table>
+            <caption>
+                <input type="text" id="filtro" onkeyup="filtrarTabela()" placeholder="Filtrar por recursos">
+            </caption>
+            <thead>
+                <tr>
+                    <th>Recursos</th>
+                    <th>Plano Básico</th>
+                    <th>Plano Padrão</th>
+                    <th>Plano Premium</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="titulo">Velocidade</td>
+                    <td>50 Mbps</td>
+                    <td>100 Mbps</td>
+                    <td>200 Mbps</td>
+                </tr>
+                <tr>
+                    <td class="titulo">Preço</td>
+                    <td>R$ 59,99/mês</td>
+                    <td>R$ 79,99/mês</td>
+                    <td>R$ 99,99/mês</td>
+                </tr>
+                <tr>
+                    <td class="titulo">Instalação</td>
+                    <td>Gratuita</td>
+                    <td>Gratuita</td>
+                    <td>Gratuita</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <br>
+    <br>
+    <br>
+    </main>
+    <footer>
+        <p>&copy;2023 - Conexão Total</p>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
